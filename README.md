@@ -4,15 +4,21 @@
 
 ## 订阅地址
 
+**推荐（国内速度快，实测可用）：**
+
+```
+https://cdn.jsdelivr.net/gh/wyj20/iptv-playlist@main/playlist.m3u
+```
+
+**GitHub 原生（国内可能较慢）：**
+
 ```
 https://raw.githubusercontent.com/wyj20/iptv-playlist/main/playlist.m3u
 ```
 
-在上面的地址前加 `https://ghproxy.net/` 等加速前缀可提升国内访问速度，例如：
-
-```
-https://ghproxy.net/https://raw.githubusercontent.com/wyj20/iptv-playlist/main/playlist.m3u
-```
+> 注意：`raw.githubusercontent.com` 带 `cache-control: max-age=300`，仓库更新后最长 **5 分钟**才会同步到该地址；jsDelivr 通常更快。
+>
+> 仓库页面（可点进去看）：https://github.com/wyj20/iptv-playlist
 
 ## 频道列表
 
