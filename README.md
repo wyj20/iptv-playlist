@@ -35,10 +35,12 @@ https://raw.githubusercontent.com/wyj20/iptv-playlist/main/playlist.m3u
 **推荐用老张的 EPG（51zmt）**，理由是它**有 CCTV1**、山东省级频道也更全：
 
 ```
-https://epg.51zmt.top:8000/e1.xml.gz
+https://epg.51zmt.top:8001/e1.xml.gz
 ```
 
-> 老张的 EPG 每天 **早上 7:10 更新**，数据是网络聚合来的免费节目单。
+> ⚠️ **务必用 `https://` 这个地址（端口 8001）**。站点也有 HTTP 版（`http://epg.51zmt.top:8000/e1.xml.gz`），但 Android 9+ 默认**禁止明文 HTTP**，很多播放器会直接拉取失败。两个地址内容完全一致，都是 1,554,891 字节。
+>
+> 老张的 EPG 每天 **早上 7:10 更新**，数据是网络聚合来的免费节目单。含 **286 个频道 / 17,422 条节目**。
 
 ### ⚠️ 关键：必须用配套的那份播放列表
 
