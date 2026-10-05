@@ -44,7 +44,8 @@ ordered += [g for g in groups if g not in GROUP_ORDER]
 out = []
 out.append("#EXTM3U")
 out.append("# 直播源 · 共 %d 个频道 / %d 个分组" % (len(entries), len(ordered)))
-out.append("# 源站：http://150.138.8.143/00/SNM/  （山东电信 HMS CDN，302 跳转带时效 token）")
+# 注释里不要出现 URL —— 某些简陋播放器会粗暴地 grep 出所有 http 链接
+out.append("# 源站：山东电信 HMS CDN（302 跳转，带时效 token）")
 out.append("# 播放器需支持跟随 302 重定向；非山东/非电信网络可能不可用")
 out.append("")
 
